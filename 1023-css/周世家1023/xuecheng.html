@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xueCheng</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .banner {
+            width: 1200px;
+            height: 392px;
+            background-color: #f3f6f8;
+            margin: 100px auto;
+        }
+
+        /* left和right模块浮动 */
+        .banner .left {
+            width: 228px;
+            height: 392px;
+            float: left;
+        }
+
+        .banner .right {
+            width: 972px;
+            height: 392px;
+            float: left;
+        }
+
+        .banner .right .top {
+            width: 957px;
+            height: 100px;
+            margin-left: 15px;
+        }
+
+        .banner .right .bottom {
+            width: 972px;
+            height: 292px;
+        }
+
+        /* bottom中浮动 */
+        .banner .right .bottom li {
+            margin-left: 15px;
+            margin-top: 23px;
+            float: left;
+            width: 228px;
+            height: 269px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <img src="学成网浮动布局/学成网素材/left.jpg" alt="" class="left">
+        <div class="right">
+            <img src="学成网浮动布局/学成网素材/top.jpg" alt="" class="top">
+            <ul class="bottom">
+                <li><img src="学成网浮动布局/学成网素材/bottom01.jpg" alt=""></li>
+                <li><img src="学成网浮动布局/学成网素材/bottom02.jpg" alt=""></li>
+                <li><img src="学成网浮动布局/学成网素材/bottom03.jpg" alt=""></li>
+                <li><img src="学成网浮动布局/学成网素材/bottom04.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

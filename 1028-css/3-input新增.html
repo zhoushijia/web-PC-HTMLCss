@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 注意加form，否则无法验证input属性的正确性 -->
+    <form action="">
+        <ul>
+            <li>邮箱<input type="email" autofocus></li>
+            <li>网站<input type="url"></li>
+            <li>日期<input type="date"></li>
+            <li>月份<input type="month"></li>
+            <li>周<input type="week"></li>
+            <li>时间<input type="time"></li>
+            <li>数字<input type="number"></li>
+            <li>手机号<input type="tel" required></li>
+            <li>搜索<input type="search"></li>
+            <li>颜色<input type="color"></li>
+
+            <!-- input中新增的属性元素 -->
+            <li><input type="search" name="sear" id="" placeholder="华为p40 pro" autocomplete="off"></li>
+            <li>上传文件<input type="file" name="" id="" multiple></li>
+            <li><input type="submit" value="提交"></li>
+        </ul>
+    </form>
+</body>
+
+</html>

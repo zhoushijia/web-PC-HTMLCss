@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?etws6l');
+            src: url('fonts/icomoon.eot?etws6l#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?etws6l') format('truetype'), url('fonts/icomoon.woff?etws6l') format('woff'), url('fonts/icomoon.svg?etws6l#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+        
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: #f00;
+        }
+        
+        div::before,
+        div::after {
+            content: "";
+            /* 行内元素不能设置宽高 */
+            /* height: 100px;
+            width: 100px; */
+        }
+        
+        .demo {
+            position: relative;
+            width: 200px;
+            height: 35px;
+            background-color: #fff;
+            border: 1px solid skyblue;
+        }
+        
+        .demo::after {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-family: 'icomoon';
+            /* content: "\e986"; */
+            content: "";
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        我前面有看不到的东西 我后面也有看不到的东西
+    </div>
+    <div class="demo">
+
+    </div>
+</body>
+
+</html>

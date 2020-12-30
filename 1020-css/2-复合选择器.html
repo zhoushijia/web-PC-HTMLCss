@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.后代选择器 */
+        div .wo div {
+            color: #000;
+        }
+
+        div .ni div {
+            color: aqua;
+        }
+
+        div .ta div {
+            color: blue;
+        }
+
+        /* 2.子选择器 */
+        div>div {
+            color: red;
+        }
+
+        /* 3.并集选择器 */
+        .wo,
+        .ni {
+            color: pink;
+        }
+
+        /* 4.交集选择器 */
+        div.test {
+            color: navy;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333333;
+        }
+
+        /* 4.伪类选择器 */
+        a:hover {
+            text-decoration: underline;
+            color: skyblue;
+        }
+
+        /* focus伪类选择器 */
+        input:focus {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="wo">
+            <div>我是谁</div>
+            <div>我在哪</div>
+        </div>
+        <div class="ni">
+            <div>你是谁</div>
+            <div>你在哪</div>
+        </div>
+        <div class="ta">
+            <div>他是谁</div>
+            <div>他在哪</div>
+        </div>
+        <div>
+            <p>儿子1</p>
+        </div>
+        <div>
+            <div>儿子2</div>
+
+        </div>
+        <div class="test">我是交集</div>
+    </div>
+    <a href="#">浮动</a><br>
+    <input type="text" name="" placeholder="请输入.." id="">
+</body>
+
+</html>

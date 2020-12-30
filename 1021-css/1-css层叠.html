@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>层叠/继承/优先级</title>
+    <style>
+        /* 继承 */
+        body {
+            color: gray;
+            font-size: 30px;
+        }
+
+        div {
+            color: red;
+        }
+
+        /* 叠加 */
+        div {
+            color: pink;
+        }
+
+        /* 优先级 */
+        .color {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="color">
+        优先级
+    </div>
+    <a href="#">xxx</a>
+</body>
+
+</html>

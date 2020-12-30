@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: #ff0000;
+            margin: auto;
+        }
+
+        .box2 {
+            position: absolute;
+            /* 方法一 */
+            /* left: 50%;
+            margin-left: -100px;
+            top: 50%;
+            margin-top: -100px; */
+            width: 200px;
+            height: 200px;
+            background-color: #0000ff;
+            font-size: 20px;
+            text-align: center;
+            line-height: 200px;
+            /* 方法二 */
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2">我居中啦</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基础选择器</title>
+    <style>
+        /* 标签选择器 */
+        li {
+            font-size: 20px;
+            color: blue;
+            font-style: italic;
+        }
+        /* 类选择器 */
+        .navy {
+            color: navy;
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        .purple {
+            background-color: purple;
+
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+
+        /* id选择器 */
+        #text-align {
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是最棒的</li>
+    </ul>
+    <!-- ul>li{第$个}*4 -->
+    <ul>
+        <li class="navy">第1个</li>
+        <li>第2个</li>
+        <li class="navy">第3个</li>
+        <li>第4个</li>
+    </ul>
+
+    <div class="purple box ">purple</div>
+    <div class="pink box" id="text-align">pink</div>
+    <div class="purple box">purple</div>
+</body>
+
+</html>

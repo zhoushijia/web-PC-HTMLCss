@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .price {
+            width: 160px;
+            height: 24px;
+            border: 2px solid #f00;
+            margin: 10px auto;
+            line-height: 24px;
+            text-align: center;
+        }
+        
+        .current {
+            position: relative;
+            float: left;
+            width: 90px;
+            height: 100%;
+            /* margin-right: 10px; */
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+            background-color: #f00;
+        }
+        
+        .current .tri {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-width: 24px 10px 0 0;
+            border-color: transparent #fff transparent transparent;
+            border-style: solid;
+        }
+        
+        .origin {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="price">
+        <span class="current">￥1650
+            <div class="tri"></div>
+        </span>
+        <span class="origin">￥5650</span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 绝对定位 */
+        .son {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: #ff0000;
+        }
+
+        .father {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            padding: 50px;
+
+            background-color: #00ffff;
+        }
+
+        .grandfather {
+            /* position: relative; */
+            width: 600px;
+            height: 600px;
+            background-color: #0000ff;
+            overflow: hidden;
+        }
+
+        /* 固定定位 */
+        .fixed {
+            position: fixed;
+            right: 100px;
+            top: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: #666666;
+        }
+
+        /* 粘性定位 */
+        .nav {
+            position: sticky;
+            top: 30px;
+            width: 1200px;
+            height: 30px;
+            background-color: orange;
+            margin: 30px auto;
+        }
+
+        body {
+            height: 4000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">导航</div>
+    <div class="grandfather">
+        <div class="father">
+            <div class="son"></div>
+        </div>
+    </div>
+    <div class="fixed">dadada</div>
+
+</body>
+
+</html>

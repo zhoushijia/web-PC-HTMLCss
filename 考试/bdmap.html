@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        
+        h3 {
+            font-size: 24px;
+            font-weight: 400;
+        }
+        
+        .clearfix:after {
+            visibility: hidden;
+            clear: both;
+            display: block;
+            content: ".";
+            height: 0
+        }
+        
+        .clearfix {
+            *zoom: 1
+        }
+        
+        .main {
+            width: 1200px;
+            height: 480px;
+            margin: 100px auto;
+            border: 1px solid skyblue;
+        }
+        
+        .header {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .header h3 {
+            padding-top: 50px;
+            padding-bottom: 25px;
+        }
+        
+        .header p {
+            margin-bottom: 45px;
+            font-size: 20px;
+            color: #ff0000;
+        }
+        
+        .content {
+            width: 100%;
+        }
+        
+        .content>div {
+            float: left;
+        }
+        
+        .map img {
+            width: 522px;
+            height: 300px;
+        }
+        
+        .details {
+            padding-left: 120px;
+            height: 300px;
+        }
+        
+        .details h3 {
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+        
+        .details div ul li {
+            font-size: 14px;
+            line-height: 32px;
+        }
+        
+        .details p a {
+            display: inline-block;
+            width: 100px;
+            height: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            font-size: 14px;
+            text-align: center;
+            color: #fff;
+            background-color: #f00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <h3>地图的七大功能与服务</h3>
+            <p>技术专员全程跟进,提供全面、高效技术支持</p>
+        </div>
+        <div class="content clearfix">
+            <div class="map">
+                <img src="images/map.png" alt="">
+            </div>
+            <div class="details">
+                <h3>百度智能定位服务</h3>
+                <div>
+                    <ul>
+                        <li>
+                            帮助广大开发者更好解决"你在哪里"这个难题
+                        </li>
+                        <li>
+                            支持GPS、WIFI融合定位
+                        </li>
+                        <li>
+                            完美支持各类应用开发者对位置获取的需求
+                        </li>
+                    </ul>
+                </div>
+                <p><a href="#">查看详情</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

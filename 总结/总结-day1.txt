@@ -1,0 +1,87 @@
+1 什么是网页?
+网页是一个由html语言编写的文本文件，里面可包含文本、图片、超链接、音视频等内容，通常以html或htm作为扩展名，由浏览器打开。
+2 有哪些浏览器及浏览器核心部件(了解)
+常用浏览器:chrome  firefox  欧朋   IE/edge  Safri
+浏览器核心部件：内核，用于将html文件解析成用户看到的丰富多彩的页面。
+3 Web标准:
+产生原因:因为浏览器很多，有标准才能让网页在不同浏览器显示出基本一致的效果，且让编写网页更简单。
+构成:
+结构  html
+表现 css
+行为 javascript
+
+4 html 全称 HyperText Markup Language 超文本标记语言 ,由一系列的标签构成
+标签格式  通常成对出现  <英文字母></英文字母> 双标签
+少量 单独出现<英文字母  />  单标签
+
+标签之间的关系
+并列
+包含
+
+5 html页面基本骨架
+<!DOCTYPE html> <!--文档类型声明表示页面由html5编写-->
+<html lang="en">  <!--lang html标签的属性，定义网页的语言->
+<head>
+    <!--head中主要设置网页整体特性，主要给浏览器看的-->
+    <meta charset="UTF-8">  <!--meta元信息  charset是meta的属性，定义字符集, charset="utf-8" 可以防止中文乱码 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- 暂时不管，主要在移动web中用到-->
+    <title>Document</title>
+</head>
+<body>
+    网页的主体,给用户看的
+</body>
+</html>
+
+6 vscode 使用：
+新建文件  ctrl+ n  ctrl+s
+文件-->将文件夹添加到工作区
+!+tab/enter  得到基本骨架
+ctrl + +/-  放大/缩小  编辑器文字
+
+7 文章相关标签
+h1-h6  标题
+h1最大 h6最小，一个页面中通常只会有一个h1
+独占一行，文字默认加粗，默认前后会有空行
+重要性h1到h6依次降低
+
+p 段落
+独占一行，默认前后会有空行
+
+br 强制换行，换行之后不会有空行
+
+lorem数字 +enter  可以快速生成测试文字
+
+文本格式化标签:
+strong b
+em i
+del s
+ins u
+
+8 图片标签
+<img src="路径"  alt="图片找不到时的替换文字" title="鼠标扫过时的提示文字" width="100" height="100" border="10" />
+title属性 其他标签也有 属于通用属性
+
+路径: 定义某个文件在电脑中的位置
+相对路径： 相对于 html文件所在的文件夹   "abc.jpg"   "f1/f2/f3/abc.jpg"  "../../f1/abc.jpg"
+绝对路径:  基于盘符(基本不用，可移植性太差)  基于网络地址 http://www.baidu.com
+
+9 链接标签
+<a  href="路径"  target="_blank" title="我是a">文字或图片或音视频</a>
+路径:网络地址   外部链接
+        本地地址   内部链接
+       xxx/yyy/aaa.zip  下载
+       “#” 空链接用于不知道具体链接地址时，具备回到顶部功能
+target:定义目标页面在哪里打开 默认值_self表示当前窗口打开，为_blank时表示 新窗口打开
+<a href="#abc">锚点链接到abc</a>       前提：页面内容足够多，出现了滚动条
+<div id="abc">xxxxxyyyy</div>
+
+10 注释标签及特殊字符
+<!--注释-->  快捷键 ctrl+/  注释内容  不被浏览器解析，供程序员参考
+某些符号 在html页面中不能直接显示，需要用特殊字符替代，才能被浏览器显示
+<&lt;   >&gt;  空格 &nbsp;
+<x>  &lt;x&gt;
+
+
+
+
+

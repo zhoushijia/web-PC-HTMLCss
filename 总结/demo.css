@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* 浮动 */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+/* 清除 input button边框线和轮廓线*/
+input,
+button {
+  border: 0;
+  outline: none;
+}
+/* 设置浮动 */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}

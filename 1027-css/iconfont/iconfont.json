@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "17852591",
+      "name": "s_出口记录",
+      "font_class": "s_chukoujilu",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "17852592",
+      "name": "s_病人",
+      "font_class": "s_bingren",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "17852593",
+      "name": "s_弹窗的返回",
+      "font_class": "s_danchuangdefanhui",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "17852594",
+      "name": "s_弹窗Xlsx文件",
+      "font_class": "s_danchuangXlsxwenjian",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "17852595",
+      "name": "s_编辑",
+      "font_class": "s_bianji",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    }
+  ]
+}

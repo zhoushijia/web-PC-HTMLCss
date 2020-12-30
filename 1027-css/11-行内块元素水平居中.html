@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            height: 0;
+        }
+        
+        .box ul {
+            text-align: center;
+        }
+        
+        input,
+        button {
+            outline: none;
+            border: none;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        li {
+            display: inline-block;
+            width: 45px;
+            height: 36px;
+            border: 1px solid #cccccc;
+            line-height: 36px;
+            background-color: #f7f7f7;
+        }
+        
+        li a {
+            text-decoration: none;
+            color: #666666;
+        }
+        
+        .prev,
+        .next {
+            width: 80px;
+        }
+        
+        li input,
+        li button {
+            width: 45px;
+            height: 36px;
+            border: 1px solid #cccccc;
+        }
+        
+        li button {
+            cursor: pointer;
+        }
+        
+        .two {
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul>
+            <li class="prev"><a href="#">&lt;&lt;上一页</a></li>
+            <li><a href="#">1</a></li>
+            <li class="two"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li class="elp"><a href="#">...</a></li>
+            <li class="next"><a href="#">下一页&gt;&gt;</a></li>
+            <li class="two"> 到第 </li>
+            <li class="two"><input type="text"></li>
+            <li class="two"> 页 </li>
+            <li class="two"><button>跳转</button></li>
+        </ul>
+    </div>
+</body>
+
+</html>
